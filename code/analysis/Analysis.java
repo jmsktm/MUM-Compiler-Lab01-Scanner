@@ -12,5 +12,30 @@ public interface Analysis extends Switch
     void setOut(Node node, Object o);
 
     void caseTWhiteSpace(TWhiteSpace node);
+    void caseTBool(TBool node);
+    void caseTBreak(TBreak node);
+    void caseTChar(TChar node);
+    void caseTConst(TConst node);
+    void caseTContinue(TContinue node);
+    void caseTKclass(TKclass node);
+    void caseTDo(TDo node);
+    void caseTElse(TElse node);
+    void caseTFalse(TFalse node);
+    void caseTFloat(TFloat node);
+    void caseTIf(TIf node);
+    void caseTInt(TInt node);
+    void caseTNew(TNew node);
+    void caseTNull(TNull node);
+    void caseTPrivate(TPrivate node);
+    void caseTProtected(TProtected node);
+    void caseTPublic(TPublic node);
+    void caseTReturn(TReturn node);
+    void caseTStatic(TStatic node);
+    void caseTString(TString node);
+    void caseTStruct(TStruct node);
+    void caseTThis(TThis node);
+    void caseTTrue(TTrue node);
+    void caseTWhile(TWhile node);
+    void caseTVoid(TVoid node);
     void caseEOF(EOF node);
 }

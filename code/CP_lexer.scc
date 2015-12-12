@@ -24,6 +24,32 @@ Tokens
     // Example token:
     // Do not change the white_space token below (LexerDriver uses it).
     white_space          = (space | ht | ff | new_line)*;
+    
+    bool = 'bool';
+    break = 'break';
+    char = 'char';
+    const = 'const';
+    continue = 'continue';
+    kclass = 'class';
+    do = 'do';
+    else = 'else';
+    false = 'false';
+    float = 'float';
+    if = 'if';
+    int = 'int';
+    new = 'new';
+    null = 'null';
+    private = 'private';
+    protected = 'protected';
+    public = 'public';
+    return = 'return';
+    static = 'static';
+    string = 'string';
+    struct = 'struct';
+    this = 'this';
+    true = 'true';
+    while = 'while';
+    void = 'void';
 
 
     // IMPORTANT INFORMATION:
@@ -68,6 +94,3 @@ Tokens
 
 
 // *****************       Reserved Words       ******************************
-
-
-
