@@ -1,0 +1,254 @@
+Question 1a:
+How do I get to the command line prompt?
+
+Answer:
+Click on Start=> Run
+Type: cmd
+This will open a command line prompt window. You can run the SableCC tool from
+this
+window as described in Question 1b below.
+
+Question 1b:
+When I run sablecc at the command line prompt I get the following exception:
+
+Exception in thread "main" java.util.zip.ZipException: The system cannot find
+the path specified
+at java.util.zip.ZipFile.open(Native Method)
+at java.util.zip.ZipFile.<init>(ZipFile.java:112)
+at java.util.jar.JarFile.<init>(JarFile.java:117)
+at java.util.jar.JarFile.<init>(JarFile.java:55)
+
+Answer:
+There is a sablecc.bat file (and a sablecc script for unix environments) in
+the bin
+subdirectory of the directory where you installed the SableCC tool. You
+installed it in the
+target directory where you unzipped the SableCC zip file. In this file there
+is a command
+line that invokes the SableCC tool and looks like the following (in the .bat
+file).
+
+java -jar lib/sablecc.jar %1 %2 %3 %4 %5 %6 %7 %8 %9
+
+The above error occurs when this command line does not have the correct
+absolute path
+to the sablecc.jar file. You must edit this .bat file so the absolute path
+to the .jar file
+appears correctly in that command. This is also explained in the README file
+for
+SableCC.
+
+Another alternative is to type in the entire command manually at the prompt.
+For
+example,
+
+java -jar <SableCCpath>/lib/sablecc.jar CP_lexer.scc
+
+<SableCCpath> has to be the absolute path to the directory where you
+installed the
+SableCC tool.
+
+A link to the zip file containing the SableCC tool is provided on the course
+web site.
+
+
+Question 2:
+My understanding is that each keyword and operator (+, -, etc) must have
+a separate definition under the “Tokens” section. Do we need to have a
+token with the name "keyword", which represents all of the previously
+defined
+keywords?.
+
+Answer:
+No. That is, each keyword must be recognized as a separate token.
+Furthermore, if you
+group the keywords together, this will cause problems for the parser you
+will be defining
+in lab3.
+
+Question 3:
+Does SableCC allow keywords or operator definitions in the “Helper”
+section? I
+understand that tokens defined in the “Helper” section are a kind of macro.
+But I am still
+confused about what should not go in to the helper section. Please give a
+quick
+explanation.
+
+Answer:
+The general rules are as follows.
+
+(1) Any definitions that do not define a complete token must be placed in
+the “Helper”
+section (otherwise you may have unexpected results when you define the
+parser in lab3).
+Helpers can only be used in the definition of tokens.
+
+(2) All token definitions must be placed in the “Tokens” section, otherwise
+a token for
+that regular expression will not be generated.
+
+Also, definitions in the Helper section are NOT macros (unlike other
+tools). Each helper
+represents a regular set which can be used in the definition of a token.
+This is unlike
+other tools (such as in the lex and flex tools), where such definitions are
+macros.
+
+Question 4a:
+I cannot prevent the white space and comments from printing even though I
+listed them
+in the "Ignored Tokens" section. Why doesn‟t this work?
+
+Answer:
+The Ignored Tokens section specifies which tokens should be ignored by the
+parser. The
+parser is specified in the Productions section (which will be defined in
+Lab3). The lexer
+creates these tokens so they will be printed by the LexerDriver program,
+i.e., you cannot
+prevent them from printing. Thus your Lab2 program is correct when it
+prints the
+comments and whitespace tokens even if they are in the Ignored Tokens
+section.
+
+Question 4b:
+My understanding is that white space and comments should go to the "Ignored
+Tokens"
+section, is that correct?
+
+Answer:
+Yes. But the "Ignored Tokens" section is not needed in Lab2 and does NOT
+need to be
+defined for Lab2; that section will be important and will have to be added
+when we do
+Lab3.
+
+Question 5:
+From the SableCC documentation, I understand that token names should not
+have
+uppercase letters, so what about the token for “String”? Is the following
+definition
+correct?
+
+string = 'String';
+
+Answer:
+The above definition is correct.
+
+You are correct in noting that token (as well as non-terminal) names can
+only use lower
+case letters. This is apparently because it simplifies and avoids
+conflicts when the
+SableCC tool generates the “node” classes used to represent syntax trees.
+However, all
+characters, including uppercase letters, are allowed in regular
+expressions (i.e., the righthand
+side of token definitions).
+
+Question 6:
+What is the difference between the following SableCC regular expressions?
+Are they
+Valid? Do they have the same meaning?
+
+[ „a‟ + „c‟ ]
+( „a‟ | „c‟ )
+[ „a‟ .. „c‟ ]
+
+Answer:
+All three are valid SableCC regular expressions. The first two
+expressions represent the
+same regular set, i.e., the set containing „a‟ and „c‟. However, [ „a‟
+.. „c‟ ] does not
+represent the same regular set because it represents the set containing
+„a‟, „b‟, and „c‟ (it‟s
+the range of characters between „a‟ and „c‟) .
+
+
+Question 7:
+What is wrong with the following SableCC regular expression?
+ [„a‟ + „b‟ + „c‟]
+
+Answer:
+The above expression is incorrect because the character set operators
+(+ and -) are nonassociative.
+Therefore, this expression must be written as
+[[„a‟ + „b‟] + „c‟]
+or as
+[„a‟ + [„b‟ + „c‟]]. 
+
+Question 8:
+Is the following SableCC regular expression valid? If not, why not?
+[all - '##']
+
+Answer:
+The square brackets are used to define character sets. Character sets
+are sets of strings in
+which every member is a string of length 1, i.e., a single character.
+
+Since „##‟ has length 2, it cannot represent or be a member of a
+character set. Therefore,
+the above regular expression is NOT valid because „##‟ does not
+represent a character set
+as required by the syntax. The syntax is given on page 32 of the
+SableCC documentation.
+
+Question 9a:
+What is required to handle the string literal during lexical analysis?
+
+Answer:
+Your scanner only has to recognize string literals.
+
+Question 9b:
+What does 'escaped character' mean in terms of compilation?
+
+Answer:
+An escape sequence is usually a „\‟ followed by some other character.
+It usually
+represents a character that is unprintable or would be misinterpreted
+if it were not
+preceded by a „\‟. These character sequences have to be translated at
+some point during
+the compilation process. However, we do not have to translate them for
+our project since
+we are only doing up to the type checking phase of compilation, i.e.,
+we are not
+generating executable code.
+
+Question 9c:
+Do we need to return tokens for escaped characters?
+
+Answer:
+No. (see above)
+
+Question 9d:
+Can we just return a string literal including escaped characters?
+
+Answer:
+Yes. That is the right thing to do.
+
+Question 9e:
+Do we have to use States to handle string literals?
+
+Answer: 
+You can use states, but they are not necessary. In fact the grammar of
+labs 2 and 3 can be
+defined without states. On the other hand, states can, in some cases,
+make the definition
+of a complex token easier for those students that are not very familiar
+with regular
+expressions. Also, some students find it easier to define a finite
+automata that recognizes
+a token using states rather than using a regular expression.
+
+Question 10:
+What is the relationship between token and regular expression?
+
+Answer:
+Each regular expression in the lexer specification defines a finite
+automata that
+recognizes a specific set of strings, i.e., a token. A string, i.e., a
+sequence of characters, is
+recognized as a specific token by a finite automata generated by the
+lexer/scanner
+generator--SableCC in our case. 
