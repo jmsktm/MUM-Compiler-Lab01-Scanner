@@ -13,16 +13,24 @@ Helpers
 
     valid_string_literal_chars = [not_eol - '"'];
 
+    simple_char_seq = ' ' | '!' | '"' | '#' | '$' | '%' | '&' | '(' | ')' 
+        | '*' | '+' | ',' | '-' | '.' | '/' | ':' | ';' | '<' | '=' | '>' 
+        | '?' | '@' | '[' | ']' | '^' | '_' | '`' | '{' | '|' | '}' | '~'
+        | ['a' .. 'z'] | ['A' .. 'Z'] | ['0' .. '9'];
+    simple_escape_seq = '\\' | '\' ''' | '\n' | '\t' | '\r' | '\b' | '\f' | '\"' ;
+
 States
     normal;
 
 Tokens
-
     comment = 
         ('//' not_eol* eol) |
         ('/*' not_star* '*'+ (not_star_slash not_star* '*'+)* '/');
 
     string_literal = ('"' valid_string_literal_chars* '"');
+    char_literal = (''' simple_char_seq ''');
+
+    escape = (''' simple_escape_seq ''');
 
     plus = '+';
     minus = '-';

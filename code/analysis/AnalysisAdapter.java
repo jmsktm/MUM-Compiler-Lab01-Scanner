@@ -81,6 +81,18 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
+    public void caseTCharLiteral(TCharLiteral node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTEscape(TEscape node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
     public void caseTPlus(TPlus node)
     {
         defaultCase(node);
