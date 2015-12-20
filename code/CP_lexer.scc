@@ -1,3 +1,4 @@
+Package com.jmsktm.compiler.lab2;
 
 Helpers
     all = [0..0xffff];
@@ -13,8 +14,7 @@ Helpers
 States
     normal;
 
-Tokens
-    white_space = (space | ht | ff | new_line)*;    
+Tokens  
     bool = 'bool';
     break = 'break';
     char = 'char';
@@ -40,6 +40,7 @@ Tokens
     true = 'true';
     while = 'while';
     void = 'void';
+    white_space = (space | ht | ff | new_line)*;
 
 Ignored Tokens
     white_space;

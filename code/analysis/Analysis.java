@@ -11,7 +11,6 @@ public interface Analysis extends Switch
     Object getOut(Node node);
     void setOut(Node node, Object o);
 
-    void caseTWhiteSpace(TWhiteSpace node);
     void caseTBool(TBool node);
     void caseTBreak(TBreak node);
     void caseTChar(TChar node);
@@ -37,5 +36,6 @@ public interface Analysis extends Switch
     void caseTTrue(TTrue node);
     void caseTWhile(TWhile node);
     void caseTVoid(TVoid node);
+    void caseTWhiteSpace(TWhiteSpace node);
     void caseEOF(EOF node);
 }
