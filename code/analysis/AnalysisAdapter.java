@@ -69,7 +69,7 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
-    public void caseTSpace(TSpace node)
+    public void caseTWhiteSpace(TWhiteSpace node)
     {
         defaultCase(node);
     }

@@ -5,14 +5,14 @@ package node;
 import analysis.*;
 
 @SuppressWarnings("nls")
-public final class TSpace extends Token
+public final class TBlank extends Token
 {
-    public TSpace(String text)
+    public TBlank(String text)
     {
         setText(text);
     }
 
-    public TSpace(String text, int line, int pos)
+    public TBlank(String text, int line, int pos)
     {
         setText(text);
         setLine(line);
@@ -22,12 +22,12 @@ public final class TSpace extends Token
     @Override
     public Object clone()
     {
-      return new TSpace(getText(), getLine(), getPos());
+      return new TBlank(getText(), getLine(), getPos());
     }
 
     @Override
     public void apply(Switch sw)
     {
-        ((Analysis) sw).caseTSpace(this);
+        ((Analysis) sw).caseTBlank(this);
     }
 }

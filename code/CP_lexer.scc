@@ -14,7 +14,7 @@ States
     normal;
 
 Tokens
-    space = (space | ht | ff | new_line)*;    
+    white_space = (space | ht | ff | new_line)*;    
     bool = 'bool';
     break = 'break';
     char = 'char';
@@ -40,3 +40,6 @@ Tokens
     true = 'true';
     while = 'while';
     void = 'void';
+
+Ignored Tokens
+    white_space;
