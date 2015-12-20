@@ -11,15 +11,45 @@ Helpers
     not_star = [all - '*'];
     not_star_slash = [not_star - '/'];
 
+
+
 States
     normal;
 
 Tokens
+
     comment = 
         ('//' not_eol* eol) |
         ('/*' not_star* '*'+ (not_star_slash not_star* '*'+)* '/');
 
+    plus = '+';
+    minus = '-';
+    mult = '*';
+    div = '/';
+    less_than = '<';
+    less_than_or_eq= '<=';
+    greater_than = '>';
+    greater_than_or_eq = '>=';
+    equals = '==';
+    and = '&&';
+    or = '||';
+    not = '!';
+    colon = ':';
+    semicolon = ';';
+    comma = ',';
+    l_par = '(';
+    r_par= ')';
+    l_brace = '{';
+    r_brace = '}';
+    l_bkt= '[';
+    r_bkt= ']';
+    not_equals = '!=';
+    equal_to = '=';
+    pointer = '->';
+
     white_space = (space | ht | ff | eol)*;
+
+    
     bool = 'bool';
     break = 'break';
     char = 'char';
