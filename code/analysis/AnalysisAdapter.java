@@ -69,6 +69,18 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
+    public void caseTComment(TComment node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTWhiteSpace(TWhiteSpace node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
     public void caseTBool(TBool node)
     {
         defaultCase(node);
@@ -214,12 +226,6 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseTVoid(TVoid node)
-    {
-        defaultCase(node);
-    }
-
-    @Override
-    public void caseTWhiteSpace(TWhiteSpace node)
     {
         defaultCase(node);
     }

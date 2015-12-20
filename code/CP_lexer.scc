@@ -1,5 +1,3 @@
-Package com.jmsktm.compiler.lab2;
-
 Helpers
     all = [0..0xffff];
     space  = ' ';          
@@ -8,13 +6,20 @@ Helpers
     ff  = 0x000c; // form feed
     ht  = 0x0009; // tab
 
-    new_line = lf | cr | cr lf ;
-    not_cr_lf = [all - [cr + lf]];
+    eol = cr | lf | cr lf;
+    not_eol = [all - [cr + lf]];
+    not_star = [all - '*'];
+    not_star_slash = [not_star - '/'];
 
 States
     normal;
 
-Tokens  
+Tokens
+    comment = 
+        ('//' not_eol* eol) |
+        ('/*' not_star* '*'+ (not_star_slash not_star* '*'+)* '/');
+
+    white_space = (space | ht | ff | eol)*;
     bool = 'bool';
     break = 'break';
     char = 'char';
@@ -40,7 +45,6 @@ Tokens
     true = 'true';
     while = 'while';
     void = 'void';
-    white_space = (space | ht | ff | new_line)*;
 
 Ignored Tokens
     white_space;

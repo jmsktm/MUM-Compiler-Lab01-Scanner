@@ -5,14 +5,14 @@ package node;
 import analysis.*;
 
 @SuppressWarnings("nls")
-public final class TBlank extends Token
+public final class TComment extends Token
 {
-    public TBlank(String text)
+    public TComment(String text)
     {
         setText(text);
     }
 
-    public TBlank(String text, int line, int pos)
+    public TComment(String text, int line, int pos)
     {
         setText(text);
         setLine(line);
@@ -22,12 +22,12 @@ public final class TBlank extends Token
     @Override
     public Object clone()
     {
-      return new TBlank(getText(), getLine(), getPos());
+      return new TComment(getText(), getLine(), getPos());
     }
 
     @Override
     public void apply(Switch sw)
     {
-        ((Analysis) sw).caseTBlank(this);
+        ((Analysis) sw).caseTComment(this);
     }
 }
