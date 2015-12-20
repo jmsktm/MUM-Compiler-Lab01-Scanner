@@ -12,6 +12,7 @@ public interface Analysis extends Switch
     void setOut(Node node, Object o);
 
     void caseTComment(TComment node);
+    void caseTStringLiteral(TStringLiteral node);
     void caseTPlus(TPlus node);
     void caseTMinus(TMinus node);
     void caseTMult(TMult node);
