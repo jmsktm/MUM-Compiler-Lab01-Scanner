@@ -23,6 +23,7 @@ States
 Tokens
     // Example token:
     // Do not change the white_space token below (LexerDriver uses it).
+    
     white_space          = (space | ht | ff | new_line)*;
     
     bool = 'bool';
