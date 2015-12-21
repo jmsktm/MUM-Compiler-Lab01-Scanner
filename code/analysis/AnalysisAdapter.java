@@ -237,6 +237,12 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
+    public void caseTFloatLit(TFloatLit node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
     public void caseTWhiteSpace(TWhiteSpace node)
     {
         defaultCase(node);
@@ -388,6 +394,12 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseTVoid(TVoid node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTIdentifier(TIdentifier node)
     {
         defaultCase(node);
     }

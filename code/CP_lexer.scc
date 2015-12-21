@@ -19,6 +19,22 @@ Helpers
         | ['a' .. 'z'] | ['A' .. 'Z'] | ['0' .. '9'];
     simple_escape_seq = '\\' | '\' ''' | '\n' | '\t' | '\r' | '\b' | '\f' | '\"' ;
 
+    digit = ['0' .. '9'];
+    non_zero_digit = [digit - '0'];
+    digit_sequence = digit+;
+
+    sign = '+' | '-';
+    exponent_part = ('e' | 'E') sign? digit_sequence;
+
+    underscore = '_';
+    lower_alpha = ['a' .. 'z'];
+    upper_alpha = ['A' .. 'Z'];
+    numeric = ['0' .. '9'];
+    alpha = [lower_alpha + upper_alpha];
+    alpha_numeric = [alpha + numeric];
+    alpha_underscore = [alpha + underscore];
+    alpha_numeric_underscore = [alpha_numeric + underscore];
+
 States
     normal;
 
@@ -57,8 +73,9 @@ Tokens
     equal_to = '=';
     pointer = '->';
 
-    white_space = (space | ht | ff | eol)*;
+    float_lit = (digit* '.' digit* exponent_part?);
 
+    white_space = (space | ht | ff | eol)*;
 
     bool = 'bool';
     break = 'break';
@@ -85,6 +102,8 @@ Tokens
     true = 'true';
     while = 'while';
     void = 'void';
+
+    identifier = (alpha_underscore alpha_numeric_underscore*);
 
 Ignored Tokens
     white_space;
