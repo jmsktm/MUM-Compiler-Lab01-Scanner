@@ -243,6 +243,18 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
+    public void caseTDot(TDot node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTModulo(TModulo node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
     public void caseTFloatLit(TFloatLit node)
     {
         defaultCase(node);

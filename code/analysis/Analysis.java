@@ -40,6 +40,8 @@ public interface Analysis extends Switch
     void caseTNotEquals(TNotEquals node);
     void caseTEqualTo(TEqualTo node);
     void caseTPointer(TPointer node);
+    void caseTDot(TDot node);
+    void caseTModulo(TModulo node);
     void caseTFloatLit(TFloatLit node);
     void caseTWhiteSpace(TWhiteSpace node);
     void caseTBool(TBool node);
