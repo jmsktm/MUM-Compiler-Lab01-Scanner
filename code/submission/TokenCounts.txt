@@ -1,0 +1,13 @@
+
+Token count
+===========
+
+all_test.out		:	261
+char_test.out		:	93
+comments_test.out	:	22
+esc_char_test.out	:	103
+esc_string_test.out	:	11
+float_lit_test.out	:	30
+op_test.out		:	24
+rw_test.out		:	28
+string_test.out		:	9
