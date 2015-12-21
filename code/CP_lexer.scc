@@ -23,7 +23,10 @@ Helpers
     non_zero_digit = [digit - '0'];
     digit_sequence = digit+;
 
+    decimal = '.';
     sign = '+' | '-';
+    float_mandatory_prefix_num = digit+ decimal digit*;
+    float_mandatory_suffix_num = digit* decimal digit+;
     exponent_part = ('e' | 'E') sign? digit_sequence;
 
     underscore = '_';
@@ -73,7 +76,7 @@ Tokens
     equal_to = '=';
     pointer = '->';
 
-    float_lit = (digit* '.' digit* exponent_part?);
+    float_lit = ((float_mandatory_prefix_num  | float_mandatory_suffix_num) exponent_part?);
 
     white_space = (space | ht | ff | eol)*;
 
