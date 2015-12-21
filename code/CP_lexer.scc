@@ -106,8 +106,5 @@ Tokens
     while = 'while';
     void = 'void';
 
+    integer_literal = (non_zero_digit digit*);
     identifier = (alpha_underscore alpha_numeric_underscore*);
-    integer_literal = non_zero_digit digit*;
-
-Ignored Tokens
-    white_space;

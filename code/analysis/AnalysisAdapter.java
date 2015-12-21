@@ -399,13 +399,13 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
-    public void caseTIdentifier(TIdentifier node)
+    public void caseTIntegerLiteral(TIntegerLiteral node)
     {
         defaultCase(node);
     }
 
     @Override
-    public void caseTIntegerLiteral(TIntegerLiteral node)
+    public void caseTIdentifier(TIdentifier node)
     {
         defaultCase(node);
     }
