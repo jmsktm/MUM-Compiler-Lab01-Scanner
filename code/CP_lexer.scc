@@ -48,6 +48,7 @@ Tokens
 
     string_literal = ('"' valid_string_literal_chars* '"');
     char_literal = (''' simple_char_seq ''');
+    escape_string_literal = ('"' (simple_escape_seq | valid_string_literal_chars)* '"');
 
     escape = (''' simple_escape_seq ''');
 

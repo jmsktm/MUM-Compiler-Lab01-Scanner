@@ -14,6 +14,7 @@ public interface Analysis extends Switch
     void caseTComment(TComment node);
     void caseTStringLiteral(TStringLiteral node);
     void caseTCharLiteral(TCharLiteral node);
+    void caseTEscapeStringLiteral(TEscapeStringLiteral node);
     void caseTEscape(TEscape node);
     void caseTPlus(TPlus node);
     void caseTMinus(TMinus node);
