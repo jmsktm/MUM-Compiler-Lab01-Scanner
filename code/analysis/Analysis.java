@@ -67,5 +67,6 @@ public interface Analysis extends Switch
     void caseTWhile(TWhile node);
     void caseTVoid(TVoid node);
     void caseTIdentifier(TIdentifier node);
+    void caseTIntegerLiteral(TIntegerLiteral node);
     void caseEOF(EOF node);
 }
