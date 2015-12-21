@@ -1,0 +1,56 @@
+Starting Lexer
+[1, 1]  	TWhiteSpace: "         "
+[1, 9]  	TComment: // This is single comment line
+ 
+[2, 1]  	TWhiteSpace: "         "
+[2, 9]  	TComment: /* Multi
+        line 
+        comment*/ 
+[4, 18]  	TWhiteSpace: "   "
+[4, 20]  	TFalse: false 
+[4, 25]  	TWhiteSpace: "  "
+[4, 26]  	TEqualTo: = 
+[4, 27]  	TTrue: true 
+[4, 31]  	TPlus: + 
+[4, 32]  	TIntegerLiteral: 37 
+[4, 34]  	TWhiteSpace: "  "
+[4, 35]  	TOr: || 
+[4, 37]  	TWhiteSpace: "  "
+[4, 38]  	TAnd: && 
+[4, 40]  	TWhiteSpace: "  "
+[4, 41]  	TLessThanOrEq: <= 
+[4, 43]  	TWhiteSpace: "  "
+[4, 44]  	TGreaterThanOrEq: >= 
+[4, 46]  	TWhiteSpace: "  "
+[4, 47]  	TIntegerLiteral: 78 
+[4, 49]  	TSemicolon: ; 
+[4, 50]  	TWhiteSpace: "
+    
+       "
+[6, 7]  	TComment: //if block   
+ 
+[7, 1]  	TWhiteSpace: "  "
+[7, 2]  	TComment: // This is a single line comment
+ 
+[8, 1]  	TComment: /* this is * a 
+multiline /* 
+# comment /
+yes it is */ 
+[11, 13]  	TWhiteSpace: "  "
+[11, 14]  	TIntegerLiteral: 4 
+[11, 15]  	TDiv: / 
+[11, 16]  	TIntegerLiteral: 5 
+[11, 17]  	TWhiteSpace: "
+
+ "
+[13, 1]  	TComment: /**/ 
+[13, 5]  	TWhiteSpace: "
+ "
+[14, 1]  	TComment: /*** // Two Multiline comments each on a single line*/ 
+[14, 55]  	TWhiteSpace: "
+ "
+[15, 1]  	TComment: /*kdljfiokdjfkjd*did/jf44*/ 
+[15, 28]  	TWhiteSpace: "
+ "
+Token count=22
+End of Scanner test

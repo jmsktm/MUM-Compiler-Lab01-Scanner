@@ -76,6 +76,8 @@ Tokens
     not_equals = '!=';
     equal_to = '=';
     pointer = '->';
+    dot = '.';
+    modulo = '%';
 
     float_lit = ((float_mandatory_prefix_num  | float_mandatory_suffix_num) exponent_part?);
 

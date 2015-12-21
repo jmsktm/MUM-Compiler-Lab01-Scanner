@@ -1,0 +1,415 @@
+Starting Lexer
+[1, 1]  	TCharLiteral: ' ' 
+[1, 4]  	TCharLiteral: '!' 
+[1, 7]  	TCharLiteral: '"' 
+[1, 10]  	TCharLiteral: '#' 
+[1, 13]  	TCharLiteral: '$' 
+[1, 16]  	TCharLiteral: '%' 
+[1, 19]  	TCharLiteral: '&' 
+[1, 22]  	TEscape: '\'' 
+[1, 26]  	TCharLiteral: '(' 
+[1, 29]  	TCharLiteral: ')' 
+[1, 32]  	TCharLiteral: '*' 
+[1, 35]  	TCharLiteral: '+' 
+[1, 38]  	TCharLiteral: ',' 
+[1, 41]  	TCharLiteral: '-' 
+[1, 44]  	TCharLiteral: '.' 
+[1, 47]  	TCharLiteral: '/' 
+[1, 50]  	TCharLiteral: '0' 
+[1, 53]  	TCharLiteral: '1' 
+[1, 56]  	TCharLiteral: '2' 
+[1, 59]  	TCharLiteral: '3' 
+[1, 62]  	TCharLiteral: '4' 
+[1, 65]  	TCharLiteral: '5' 
+[1, 68]  	TCharLiteral: '6' 
+[1, 71]  	TCharLiteral: '7' 
+[1, 74]  	TCharLiteral: '8' 
+[1, 77]  	TWhiteSpace: "
+ "
+[2, 1]  	TCharLiteral: '9' 
+[2, 4]  	TCharLiteral: ':' 
+[2, 7]  	TCharLiteral: ';' 
+[2, 10]  	TCharLiteral: '<' 
+[2, 13]  	TCharLiteral: '=' 
+[2, 16]  	TCharLiteral: '>' 
+[2, 19]  	TCharLiteral: '?' 
+[2, 22]  	TCharLiteral: '@' 
+[2, 25]  	TCharLiteral: 'A' 
+[2, 28]  	TCharLiteral: 'B' 
+[2, 31]  	TCharLiteral: 'C' 
+[2, 34]  	TCharLiteral: 'D' 
+[2, 37]  	TCharLiteral: 'E' 
+[2, 40]  	TCharLiteral: 'F' 
+[2, 43]  	TCharLiteral: 'G' 
+[2, 46]  	TCharLiteral: 'H' 
+[2, 49]  	TCharLiteral: 'I' 
+[2, 52]  	TCharLiteral: 'J' 
+[2, 55]  	TCharLiteral: 'K' 
+[2, 58]  	TCharLiteral: 'L' 
+[2, 61]  	TCharLiteral: 'M' 
+[2, 64]  	TCharLiteral: 'N' 
+[2, 67]  	TCharLiteral: 'O' 
+[2, 70]  	TCharLiteral: 'P' 
+[2, 73]  	TCharLiteral: 'Q' 
+[2, 76]  	TWhiteSpace: "
+ "
+[3, 1]  	TCharLiteral: 'R' 
+[3, 4]  	TCharLiteral: 'S' 
+[3, 7]  	TCharLiteral: 'T' 
+[3, 10]  	TCharLiteral: 'U' 
+[3, 13]  	TCharLiteral: 'V' 
+[3, 16]  	TCharLiteral: 'W' 
+[3, 19]  	TCharLiteral: 'X' 
+[3, 22]  	TCharLiteral: 'Y' 
+[3, 25]  	TCharLiteral: 'Z' 
+[3, 28]  	TCharLiteral: '[' 
+[3, 31]  	TEscape: '\\' 
+[3, 35]  	TCharLiteral: ']' 
+[3, 38]  	TCharLiteral: '^' 
+[3, 41]  	TCharLiteral: '_' 
+[3, 44]  	TCharLiteral: '`' 
+[3, 47]  	TCharLiteral: 'a' 
+[3, 50]  	TCharLiteral: 'b' 
+[3, 53]  	TCharLiteral: 'c' 
+[3, 56]  	TCharLiteral: 'd' 
+[3, 59]  	TCharLiteral: 'e' 
+[3, 62]  	TCharLiteral: 'f' 
+[3, 65]  	TCharLiteral: 'g' 
+[3, 68]  	TCharLiteral: 'h' 
+[3, 71]  	TCharLiteral: 'i' 
+[3, 74]  	TCharLiteral: 'j' 
+[3, 77]  	TWhiteSpace: "
+ "
+[4, 1]  	TCharLiteral: 'k' 
+[4, 4]  	TCharLiteral: 'l' 
+[4, 7]  	TCharLiteral: 'm' 
+[4, 10]  	TCharLiteral: 'n' 
+[4, 13]  	TCharLiteral: 'o' 
+[4, 16]  	TCharLiteral: 'p' 
+[4, 19]  	TCharLiteral: 'q' 
+[4, 22]  	TCharLiteral: 'r' 
+[4, 25]  	TCharLiteral: 's' 
+[4, 28]  	TCharLiteral: 't' 
+[4, 31]  	TCharLiteral: 'u' 
+[4, 34]  	TCharLiteral: 'v' 
+[4, 37]  	TCharLiteral: 'w' 
+[4, 40]  	TCharLiteral: 'x' 
+[4, 43]  	TCharLiteral: 'y' 
+[4, 46]  	TCharLiteral: 'z' 
+[4, 49]  	TCharLiteral: '{' 
+[4, 52]  	TCharLiteral: '|' 
+[4, 55]  	TCharLiteral: '}' 
+[4, 58]  	TCharLiteral: '~' 
+[4, 61]  	TWhiteSpace: "
+ "
+[5, 1]  	TKclass: class 
+[5, 6]  	TWhiteSpace: "  "
+[5, 7]  	TIdentifier: g1 
+[5, 9]  	TLBrace: { 
+[5, 10]  	TWhiteSpace: "
+     "
+[6, 5]  	TChar: char 
+[6, 9]  	TWhiteSpace: "  "
+[6, 10]  	TIdentifier: ch 
+[6, 12]  	TEqualTo: = 
+[6, 13]  	TCharLiteral: 'c' 
+[6, 16]  	TSemicolon: ; 
+[6, 17]  	TWhiteSpace: "
+     "
+[7, 5]  	TInt: int 
+[7, 8]  	TWhiteSpace: "  "
+[7, 9]  	TIdentifier: i 
+[7, 10]  	TWhiteSpace: "  "
+[7, 11]  	TEqualTo: = 
+[7, 12]  	TWhiteSpace: "  "
+[7, 13]  	TIntegerLiteral: 54 
+[7, 15]  	TSemicolon: ; 
+[7, 16]  	TWhiteSpace: "
+     "
+[8, 5]  	TBool: bool 
+[8, 9]  	TWhiteSpace: "  "
+[8, 10]  	TIdentifier: b 
+[8, 11]  	TEqualTo: = 
+[8, 12]  	TFalse: false 
+[8, 17]  	TSemicolon: ; 
+[8, 18]  	TWhiteSpace: "
+     "
+[9, 5]  	TDo: do 
+[9, 7]  	TWhiteSpace: "  "
+[9, 8]  	TLBrace: { 
+[9, 9]  	TWhiteSpace: "
+     "
+[10, 5]  	TRBrace: } 
+[10, 6]  	TWhiteSpace: "  "
+[10, 7]  	TWhile: while 
+[10, 12]  	TWhiteSpace: "  "
+[10, 13]  	TLPar: ( 
+[10, 14]  	TFalse: false 
+[10, 19]  	TRPar: ) 
+[10, 20]  	TSemicolon: ; 
+[10, 21]  	TWhiteSpace: "
+    
+     "
+[12, 5]  	TWhile: while 
+[12, 10]  	TLPar: ( 
+[12, 11]  	TTrue: true 
+[12, 15]  	TRPar: ) 
+[12, 16]  	TLBrace: { 
+[12, 17]  	TWhiteSpace: "
+         "
+[13, 9]  	TIf: if 
+[13, 11]  	TLPar: ( 
+[13, 12]  	TIdentifier: x 
+[13, 13]  	TEquals: == 
+[13, 15]  	TIntegerLiteral: 99 
+[13, 17]  	TRPar: ) 
+[13, 18]  	TWhiteSpace: "  "
+[13, 19]  	TContinue: continue 
+[13, 27]  	TSemicolon: ; 
+[13, 28]  	TWhiteSpace: "
+         "
+[14, 9]  	TIdentifier: print 
+[14, 14]  	TLPar: ( 
+[14, 15]  	TIntegerLiteral: 546980000 
+[14, 24]  	TRPar: ) 
+[14, 25]  	TSemicolon: ; 
+[14, 26]  	TWhiteSpace: "
+         "
+[15, 9]  	TIdentifier: read 
+[15, 13]  	TLPar: ( 
+[15, 14]  	TMinus: - 
+[15, 15]  	TIntegerLiteral: 8374839 
+[15, 22]  	TRPar: ) 
+[15, 23]  	TSemicolon: ; 
+[15, 24]  	TWhiteSpace: "
+         "
+[16, 9]  	TComment: // This is single comment line
+ 
+[17, 1]  	TWhiteSpace: "         "
+[17, 9]  	TStringLiteral: "Real good program\tand \\" 
+[17, 36]  	TWhiteSpace: "
+         "
+[18, 9]  	TComment: /* Multi
+        line 
+        comment*/ 
+[20, 18]  	TWhiteSpace: "   "
+[20, 20]  	TFalse: false 
+[20, 25]  	TWhiteSpace: "  "
+[20, 26]  	TEqualTo: = 
+[20, 27]  	TTrue: true 
+[20, 31]  	TPlus: + 
+[20, 32]  	TIntegerLiteral: 37 
+[20, 34]  	TWhiteSpace: "  "
+[20, 35]  	TOr: || 
+[20, 37]  	TWhiteSpace: "  "
+[20, 38]  	TAnd: && 
+[20, 40]  	TWhiteSpace: "  "
+[20, 41]  	TLessThanOrEq: <= 
+[20, 43]  	TWhiteSpace: "  "
+[20, 44]  	TGreaterThanOrEq: >= 
+[20, 46]  	TWhiteSpace: "  "
+[20, 47]  	TIntegerLiteral: 78 
+[20, 49]  	TSemicolon: ; 
+[20, 50]  	TWhiteSpace: "
+         "
+[21, 9]  	TReturn: return 
+[21, 15]  	TSemicolon: ; 
+[21, 16]  	TWhiteSpace: "
+         "
+[22, 9]  	TLBkt: [ 
+[22, 10]  	TRBkt: ] 
+[22, 11]  	TWhiteSpace: "  "
+[22, 12]  	TLPar: ( 
+[22, 13]  	TRPar: ) 
+[22, 14]  	TWhiteSpace: "  "
+[22, 15]  	TPointer: -> 
+[22, 17]  	TWhiteSpace: "  "
+[22, 18]  	TLBrace: { 
+[22, 19]  	TRBrace: } 
+[22, 20]  	TSemicolon: ; 
+[22, 21]  	TWhiteSpace: "
+     "
+[23, 5]  	TRBrace: } 
+[23, 6]  	TWhiteSpace: "
+    
+     "
+[25, 5]  	TIf: if 
+[25, 7]  	TLPar: ( 
+[25, 8]  	TRPar: ) 
+[25, 9]  	TLBrace: { 
+[25, 10]  	TWhiteSpace: "
+       "
+[26, 7]  	TComment: //if block   
+ 
+[27, 1]  	TWhiteSpace: "       "
+[27, 7]  	TStringLiteral: "if block" 
+[27, 17]  	TWhiteSpace: "
+     "
+[28, 5]  	TRBrace: } 
+[28, 6]  	TWhiteSpace: "
+     "
+[29, 5]  	TElse: else 
+[29, 9]  	TLBrace: { 
+[29, 10]  	TWhiteSpace: "
+         "
+[30, 9]  	TStringLiteral: "else block" 
+[30, 21]  	TWhiteSpace: "    
+     "
+[31, 5]  	TRBrace: } 
+[31, 6]  	TWhiteSpace: "
+    
+     "
+[33, 5]  	TIdentifier: dig 
+[33, 8]  	TDiv: / 
+[33, 9]  	TIdentifier: sig 
+[33, 12]  	TMult: * 
+[33, 13]  	TIdentifier: pg 
+[33, 15]  	TPlus: + 
+[33, 16]  	TIntegerLiteral: 54 
+[33, 18]  	TMinus: - 
+[33, 19]  	TIdentifier: ty 
+[33, 21]  	TWhiteSpace: "
+    
+     "
+[35, 5]  	TIntegerLiteral: 7 
+[35, 6]  	TIdentifier: t7t7t7t 
+[35, 13]  	TWhiteSpace: "   "
+[35, 15]  	TComment: // integer literal 7 followed by identifier t7t7t7t
+ 
+[36, 1]  	TWhiteSpace: " 
+  "
+[37, 2]  	TIntegerLiteral: 4 
+[37, 3]  	TDiv: / 
+[37, 4]  	TIntegerLiteral: 5 
+[37, 5]  	TWhiteSpace: "
+  "
+[38, 2]  	TStringLiteral: "skipped line due to single line comment" 
+[38, 43]  	TWhiteSpace: "
+  "
+[39, 2]  	TComment: // This is a single line comment
+ 
+[40, 1]  	TWhiteSpace: "  "
+[40, 2]  	TEscapeStringLiteral: " This is a string  \t and\"\\\\\" \n  \\" 
+[40, 44]  	TWhiteSpace: "
+ "
+[41, 1]  	TStringLiteral: "See the Skipped lines for multiline comment below" 
+[41, 52]  	TWhiteSpace: "
+ "
+[42, 1]  	TComment: /* this is * a 
+multiline /* 
+# comment /
+yes it is */ 
+[45, 13]  	TWhiteSpace: "  "
+[45, 14]  	TIntegerLiteral: 4 
+[45, 15]  	TDiv: / 
+[45, 16]  	TIntegerLiteral: 5 
+[45, 17]  	TWhiteSpace: "
+
+ "
+[47, 1]  	TComment: /*** // Two Multiline comments each on a single line*/ 
+[47, 55]  	TWhiteSpace: "
+ "
+[48, 1]  	TIdentifier: f 
+[48, 2]  	TEqualTo: = 
+[48, 3]  	TIdentifier: g 
+[48, 4]  	TPlus: + 
+[48, 5]  	TIdentifier: h 
+[48, 6]  	TSemicolon: ; 
+[48, 7]  	TWhiteSpace: "  "
+[48, 8]  	TKclass: class 
+[48, 13]  	TWhiteSpace: "   
+ "
+[49, 1]  	TIdentifier: dksfiu 
+[49, 7]  	TWhiteSpace: "
+ "
+[50, 1]  	TIdentifier: afoihje 
+[50, 8]  	TWhiteSpace: "  "
+[50, 9]  	TEqualTo: = 
+[50, 10]  	TWhiteSpace: "  "
+[50, 11]  	TDiv: / 
+[50, 12]  	TIdentifier: a 
+[50, 13]  	TPlus: + 
+[50, 14]  	TIdentifier: aofd 
+[50, 18]  	TLBkt: [ 
+[50, 19]  	TPlus: + 
+[50, 20]  	TRBkt: ] 
+[50, 21]  	TIdentifier: eple 
+[50, 25]  	TWhiteSpace: "
+ "
+[51, 1]  	TIdentifier: ldmfjemd 
+[51, 9]  	TWhiteSpace: "
+ "
+[52, 1]  	TIdentifier: d 
+[52, 2]  	TSemicolon: ; 
+[52, 3]  	TIdentifier: f 
+[52, 4]  	TWhiteSpace: "
+ "
+[53, 1]  	TStringLiteral: "lkadjfioadsjfoieiurheitnirhtoir\\erpkronjiohdjfhioejoijreihtiueiuftbruegbuiriutnrieutiuretuireuitburiut" 
+[53, 106]  	TWhiteSpace: "
+ "
+[54, 1]  	TStringLiteral: "long identifier" 
+[54, 18]  	TWhiteSpace: "
+ "
+[55, 1]  	TIdentifier: jkhroeingtiorej8945789yewn985y438hbf43943u5985rbuieyr8743i985hdfoijht8943h 
+[55, 75]  	TWhiteSpace: "
+ "
+[56, 1]  	TStringLiteral: "long identifier delimitor" 
+[56, 28]  	TEscape: '\t' 
+[56, 32]  	TWhiteSpace: "
+ "
+[57, 1]  	TPlus: + 
+[57, 2]  	TIdentifier: dklfjoi973849yndiuy8943whrnef0320985798d 
+[57, 42]  	TWhiteSpace: "
+ "
+[58, 1]  	TDiv: / 
+[58, 2]  	TIntegerLiteral: 77654 
+[58, 7]  	TIdentifier: g64 
+[58, 10]  	TWhiteSpace: "
+ "
+[59, 1]  	TComment: /*kdljfiokdjfkjd*did/jf44
+
+dl;fkjoe
+
+dklfjioe*/ 
+[63, 11]  	TIdentifier: rkjojriotj04455 
+[63, 26]  	TSemicolon: ; 
+[63, 27]  	TIdentifier: kmtou5096uk 
+[63, 38]  	TWhiteSpace: "    "
+[63,41] Unknown token: 0-
+[63, 43]  	TIntegerLiteral: 21 
+[63, 45]  	TEqualTo: = 
+[63, 46]  	TIntegerLiteral: 87 
+[63, 48]  	TDiv: / 
+[63, 49]  	TIntegerLiteral: 97684 
+[63, 54]  	TIdentifier: g 
+[63, 55]  	TSemicolon: ; 
+[63, 56]  	TIdentifier: orkt 
+[63, 60]  	TWhiteSpace: "
+ "
+[64, 1]  	TIdentifier: dfkloijrtf 
+[64, 11]  	TWhiteSpace: "
+ "
+[65, 1]  	TComma: , 
+[65, 2]  	TIdentifier: dofk 
+[65, 6]  	TWhiteSpace: "
+ "
+[66, 1]  	TIntegerLiteral: 4 
+[66, 2]  	TComma: , 
+[66, 3]  	TIdentifier: mbjuxz53r7 
+[66, 13]  	TWhiteSpace: "
+ "
+[67, 1]  	TComma: , 
+[67, 2]  	TIdentifier: f 
+[67, 3]  	TWhiteSpace: "  "
+[67, 4]  	TStruct: struct 
+[67, 10]  	TWhiteSpace: "
+ "
+[68,1] Unknown token: ^
+[68, 2]  	TWhiteSpace: "   "
+[68, 4]  	TComment: // this is an unknown token
+ 
+[69, 1]  	TDot: . 
+[69, 2]  	TWhiteSpace: "     "
+[69, 6]  	TModulo: % 
+Token count=261
+End of Scanner test

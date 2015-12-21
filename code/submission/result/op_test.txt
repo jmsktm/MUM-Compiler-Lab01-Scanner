@@ -1,0 +1,56 @@
+Starting Lexer
+[1, 1]  	TWhiteSpace: "
+ "
+[2, 1]  	TPlus: + 
+[2, 2]  	TWhiteSpace: "   "
+[2, 4]  	TMinus: - 
+[2, 5]  	TWhiteSpace: "   "
+[2, 7]  	TMult: * 
+[2, 8]  	TWhiteSpace: "   "
+[2, 10]  	TDiv: / 
+[2, 11]  	TWhiteSpace: "   "
+[2, 13]  	TLessThan: < 
+[2, 14]  	TWhiteSpace: "   "
+[2, 16]  	TLessThanOrEq: <= 
+[2, 18]  	TWhiteSpace: "   "
+[2, 20]  	TGreaterThan: > 
+[2, 21]  	TWhiteSpace: "   "
+[2, 23]  	TGreaterThanOrEq: >= 
+[2, 25]  	TWhiteSpace: "   "
+[2, 27]  	TEquals: == 
+[2, 29]  	TWhiteSpace: "   "
+[2, 31]  	TAnd: && 
+[2, 33]  	TWhiteSpace: "   "
+[2, 35]  	TOr: || 
+[2, 37]  	TWhiteSpace: "   "
+[2, 39]  	TNot: ! 
+[2, 40]  	TWhiteSpace: "   "
+[2, 42]  	TColon: : 
+[2, 43]  	TWhiteSpace: "   "
+[2, 45]  	TSemicolon: ; 
+[2, 46]  	TWhiteSpace: "   "
+[2, 48]  	TComma: , 
+[2, 49]  	TWhiteSpace: "  
+ "
+[3, 1]  	TLPar: ( 
+[3, 2]  	TWhiteSpace: "   "
+[3, 4]  	TRPar: ) 
+[3, 5]  	TWhiteSpace: "   "
+[3, 7]  	TLBrace: { 
+[3, 8]  	TWhiteSpace: "   "
+[3, 10]  	TRBrace: } 
+[3, 11]  	TWhiteSpace: "   "
+[3, 13]  	TLBkt: [ 
+[3, 14]  	TWhiteSpace: "   "
+[3, 16]  	TRBkt: ] 
+[3, 17]  	TWhiteSpace: "   "
+[3, 19]  	TNotEquals: != 
+[3, 21]  	TWhiteSpace: "   "
+[3, 23]  	TEqualTo: = 
+[3, 24]  	TWhiteSpace: "   "
+[3, 26]  	TPointer: -> 
+[3, 28]  	TWhiteSpace: "  
+
+ "
+Token count=24
+End of Scanner test

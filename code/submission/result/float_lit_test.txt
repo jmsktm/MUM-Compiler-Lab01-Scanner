@@ -1,0 +1,72 @@
+Starting Lexer
+[1, 1]  	TWhiteSpace: "
+ "
+[2, 1]  	TFloat: float 
+[2, 6]  	TWhiteSpace: "  "
+[2, 7]  	TIdentifier: a 
+[2, 8]  	TWhiteSpace: "  "
+[2, 9]  	TEqualTo: = 
+[2, 10]  	TWhiteSpace: "  "
+[2, 11]  	TFloatLit: 1.5 
+[2, 14]  	TWhiteSpace: "  "
+[2, 15]  	TSemicolon: ; 
+[2, 16]  	TWhiteSpace: "
+ "
+[3, 1]  	TFloat: float 
+[3, 6]  	TWhiteSpace: "  "
+[3, 7]  	TIdentifier: b 
+[3, 8]  	TWhiteSpace: "  "
+[3, 9]  	TEqualTo: = 
+[3, 10]  	TWhiteSpace: "  "
+[3, 11]  	TFloatLit: .5 
+[3, 13]  	TWhiteSpace: "  "
+[3, 14]  	TSemicolon: ; 
+[3, 15]  	TWhiteSpace: "
+ "
+[4, 1]  	TFloat: float 
+[4, 6]  	TWhiteSpace: "  "
+[4, 7]  	TIdentifier: c 
+[4, 8]  	TWhiteSpace: "  "
+[4, 9]  	TEqualTo: = 
+[4, 10]  	TWhiteSpace: "  "
+[4, 11]  	TFloatLit: 1. 
+[4, 13]  	TWhiteSpace: "  "
+[4, 14]  	TSemicolon: ; 
+[4, 15]  	TWhiteSpace: "
+ "
+[5, 1]  	TFloat: float 
+[5, 6]  	TWhiteSpace: "  "
+[5, 7]  	TIdentifier: d 
+[5, 8]  	TWhiteSpace: "  "
+[5, 9]  	TEqualTo: = 
+[5, 10]  	TWhiteSpace: "  "
+[5, 11]  	TFloatLit: 1.e05 
+[5, 16]  	TWhiteSpace: "  "
+[5, 17]  	TSemicolon: ; 
+[5, 18]  	TWhiteSpace: "
+ "
+[6, 1]  	TFloat: float 
+[6, 6]  	TWhiteSpace: "  "
+[6, 7]  	TIdentifier: e 
+[6, 8]  	TWhiteSpace: "  "
+[6, 9]  	TEqualTo: = 
+[6, 10]  	TWhiteSpace: "  "
+[6, 11]  	TFloatLit: .5E+1 
+[6, 16]  	TWhiteSpace: "  "
+[6, 17]  	TSemicolon: ; 
+[6, 18]  	TWhiteSpace: "
+ "
+[7, 1]  	TFloat: float 
+[7, 6]  	TWhiteSpace: "  "
+[7, 7]  	TIdentifier: f 
+[7, 8]  	TWhiteSpace: "  "
+[7, 9]  	TEqualTo: = 
+[7, 10]  	TWhiteSpace: "  "
+[7, 11]  	TFloatLit: 1.77E-03 
+[7, 19]  	TWhiteSpace: "  "
+[7, 20]  	TSemicolon: ; 
+[7, 21]  	TWhiteSpace: "
+
+ "
+Token count=30
+End of Scanner test

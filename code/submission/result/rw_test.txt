@@ -1,0 +1,66 @@
+Starting Lexer
+[1, 1]  	TWhiteSpace: "
+ "
+[2, 1]  	TBool: bool 
+[2, 5]  	TWhiteSpace: "   "
+[2, 7]  	TBreak: break 
+[2, 12]  	TWhiteSpace: "   "
+[2, 14]  	TChar: char 
+[2, 18]  	TWhiteSpace: "   "
+[2, 20]  	TConst: const 
+[2, 25]  	TWhiteSpace: "   "
+[2, 27]  	TContinue: continue 
+[2, 35]  	TWhiteSpace: "   "
+[2, 37]  	TKclass: class 
+[2, 42]  	TWhiteSpace: " 
+ "
+[3, 1]  	TDo: do 
+[3, 3]  	TWhiteSpace: "  "
+[3, 4]  	TElse: else 
+[3, 8]  	TWhiteSpace: "  "
+[3, 9]  	TFalse: false 
+[3, 14]  	TWhiteSpace: "  "
+[3, 15]  	TFloat: float 
+[3, 20]  	TWhiteSpace: "  "
+[3, 21]  	TIf: if 
+[3, 23]  	TWhiteSpace: "  "
+[3, 24]  	TInt: int 
+[3, 27]  	TWhiteSpace: " 
+ "
+[4, 1]  	TNull: null 
+[4, 5]  	TWhiteSpace: "  "
+[4, 6]  	TNew: new 
+[4, 9]  	TWhiteSpace: "  "
+[4, 10]  	TPrivate: private 
+[4, 17]  	TWhiteSpace: "  "
+[4, 18]  	TProtected: protected 
+[4, 27]  	TWhiteSpace: "  "
+[4, 28]  	TPublic: public 
+[4, 34]  	TWhiteSpace: "  "
+[4, 35]  	TReturn: return 
+[4, 41]  	TWhiteSpace: "  "
+[4, 42]  	TStatic: static 
+[4, 48]  	TWhiteSpace: "
+ "
+[5, 1]  	TString: string 
+[5, 7]  	TWhiteSpace: "  "
+[5, 8]  	TThis: this 
+[5, 12]  	TWhiteSpace: "  "
+[5, 13]  	TTrue: true 
+[5, 17]  	TWhiteSpace: "  "
+[5, 18]  	TWhile: while 
+[5, 23]  	TWhiteSpace: "  "
+[5, 24]  	TVoid: void 
+[5, 28]  	TWhiteSpace: " 
+    
+ "
+[7, 1]  	TComment: // the above should be reserved words
+ 
+[8, 1]  	TWhiteSpace: "     "
+[8, 5]  	TIntegerLiteral: 7 
+[8, 6]  	TIdentifier: t7t7t7t 
+[8, 13]  	TWhiteSpace: "   "
+[8, 15]  	TComment: // integer literal 7 followed by identifier t7t7t7t
+ 
+Token count=28
+End of Scanner test
